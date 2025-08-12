@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="backgroundOverlay"></div>
+            <div class="px-3 py-sm-2 px-sm-4" id="navbar2">
+                <!--Use this element for laptop and desktop-->
+                <img src="Asset/Pictures/Bubble tea logo.png" class="img-fluid d-none d-lg-block"
+                    data-bs-toggle="tooltip" data-bs-title="Click me to open navigation menu." data-bs-placement="left"
+                    id="logoLaptop" alt="A milk tea that has pearls and straw">
+
+                <!--Use this element for phone and tablet-->
+                <img src="Asset/Pictures/Bubble tea logo.png" class="img-fluid d-lg-none" data-bs-toggle="tooltip"
+                    data-bs-title="Click me to open navigation menu." data-bs-placement="left" id="logoMobile"
+                    alt="A milk tea that has pearls and straw">
+                <p id="logoTitle" class=" pt-3 pe-3">The Boba Culture</p>
+            </div>
+
+            <div id="navigation">
+                <!--Use this element for laptop and desktop-->
+                <ul class="d-none d-lg-flex">
+                    <li class="nav-menu-laptop">
+                        <a class="anchorNavLaptop" href="index.html">
+                            <span class="pearls">⚫</span>
+                        </a>
+                        <span class="nav-item-laptop px-5 py-1">Home</span>
+                    </li>
+                    <li class="nav-menu-laptop">
+                        <a class="anchorNavLaptop" href="information.html">
+                            <span class="pearls">⚫</span>
+                        </a>
+                        <span class="nav-item-laptop px-5 py-1">Information</span>
+                    </li>
+                    <li class="nav-menu-laptop">
+                        <a class="anchorNavLaptop" href="form.html">
+                            <span class="pearls">⚫</span>
+                        </a>
+                        <span class="nav-item-laptop px-5 py-1">Form</span>
+                    </li>
+                </ul>
+
+                <!--Use this element for phone and tablet-->
+                <ul class="d-flex d-lg-none">
+                    <li class="nav-menu-mobile">
+                        <a class="anchorNavMobile" href="index.html">
+                            <span class="pearls">⚫</span>
+                            <span class="nav-item-mobile px-5 py-1">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu-mobile">
+                        <a class="anchorNavMobile" href="information.html">
+                            <span class="pearls">⚫</span>
+                            <span class="nav-item-mobile px-5 py-1">Information</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu-mobile">
+                        <a class="anchorNavMobile" href="form.html">
+                            <span class="pearls">⚫</span>
+                            <span class="nav-item-mobile px-5 py-1">Form</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Use this element for laptop and desktop-->
+        <div class="container-fluid d-none d-lg-block position-relative"> <!--show CONTAINER-FLUID on lg and bigger-->
+
+            <img src="/Asset/Pictures/Shaker.png" alt="center icon" id="shakernavigation" class="py-2 px-4">
+
+            <div class="row first-row-laptop">
+                <div class="col-lg-6" id="first-column-outer-laptop"> <!--make column half width on lg and bigger-->
+                    <div id="overlay1">History & Origin <br> <span class="overlay-subtitle"> Start with a shaker hover,
+                            <br> then check me </span> </div> <!-- overlay div added -->
+                    <div class="row first-column-laptop p-3 gy-4">
+                        <div class="col-12 secondPage-title-laptop pacifico-regular py-3">History & Origin</div>
+                        <div class="col-12 first-column-content-laptop pb-3 pt-4 px-4">
+                            <h1 class="first-column-content-title-laptop">Where and How It Started:</h1>
+                            <p class="first-column-content-info-laptop">Bubble tea began in Taiwan (1980s), blending
+                                sweet milk tea with chewy tapioca pearls.
+                                One origin story credits Chun Shui Tang Tea House in Taichung.</p>
+                        </div>
+                        <div class="col-12 first-column-content-laptop pb-3 pt-4 px-4">
+                            <h1 class="first-column-content-title-laptop text-end">Evolution and Global Spread:</h1>
+                            <p class="first-column-content-info-laptop text-end">From a Taiwanese street drink, it
+                                expanded across Asia, then to North America, Europe,
+                                and beyond, evolving with new flavors and styles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" id="second-column-outer-laptop">
+                    <div id="overlay2">Type of Bubble Tea <br> <span class="overlay-subtitle"> Start with a shaker
+                            hover, <br> then check me </span> </div>
+                    <div class="row second-column-laptop p-3 gy-4">
+                        <div class="col-12 secondPage-title-laptop pacifico-regular text-end py-3">Type of Bubble Tea
+                        </div>
+                        <div class="col-11 second-column-content-laptop px-0 py-2 ms-auto"
+                            id="second-column-item1-laptop">
+                            <p class="m-0" id="second-column-nonbutton1-laptop">Flavored tea</p>
+
+                        </div>
+                        <div class="col-11 second-column-content-laptop px-0 py-2 ms-auto"
+                            id="second-column-item2-laptop">
+                            <p class="m-0" id="second-column-nonbutton2-laptop">Milk tea</p>
+
+                        </div>
+                        <div class="col-11 second-column-content-laptop px-0 py-2 ms-auto"
+                            id="second-column-item3-laptop">
+                            <p class="m-0" id="second-column-nonbutton3-laptop">Slushies</p>
+
+                        </div>
+                        <div class="col-11 second-column-content-laptop px-0 py-2 ms-auto"
+                            id="second-column-item4-laptop">
+                            <p class="m-0" id="second-column-nonbutton4-laptop">And MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row second-row-laptop">
+                <div class="col-lg-6" id="third-column-outer-laptop">
+                    <div id="overlay3"> Pop Culture & Trends <br> <span class="overlay-subtitle"> Start with a shaker
+                            hover, <br> then check me </span> </div>
+                    <div class="row py-5 px-4">
+                        <div class="col-5 third-column-content-laptop ms-1 me-3 p-4">
+                            <h4 class="third-column-content-title-laptop">Bubble Tea Shops as Community Hangouts</h4>
+                            <p class="third-column-content-info-laptop py-2">Bubble tea cafes are more than just places
+                                to get drinks — they have become social hubs
+                                for friends, couples, and study groups. Many cafes have <span
+                                    class="highlight-word">Instagrammable interiors</span> with
+                                cozy seating, neon signs, and trendy decor, encouraging people to spend time there. In
+                                some cities, bubble tea shops are a must-stop spot after school or work, similar to how
+                                coffee shops work in the West. Free Wi-Fi and charging spots often make them study or
+                                work-friendly spaces for students and freelancers.</p>
+                            <img src="/Asset/Pictures/Women hangout.webp" alt="" class="third-column-picture-laptop">
+                        </div>
+                        <div class="col-5 third-column-content-laptop ms-5 p-4">
+                            <img src="/Asset/Pictures/Celebrities.png" alt="" class="third-column-picture-laptop">
+                            <p class="third-column-content-info-laptop pt-3 pb-1">Bubble tea has become more than a
+                                drink — it's a
+                                global trend shaping pop culture, social
+                                media, and fashion. Featured in TV shows, movies, and K-pop culture, it's boosted by
+                                influencers and celebrities sharing their favorite boba drinks. The rise of
+                                <span class="highlight-word"> Instagrammable drinks</span> — colorful layers, creative
+                                toppings, and cute cup designs — has
+                                made it a social media favorite, with millions of posts under hashtags like #BubbleTea
+                                and #BobaLife. Bubble tea branding also inspires merchandise and pastel-themed
+                                streetwear.
+                            </p>
+                            <h4 class="third-column-content-title-laptop">Bubble Tea in Pop Culture & Trends</h4>
+                        </div>
+                        <div class="col-12 secondPage-title-laptop pacifico-regular mt-5">Cultural Impact</div>
+                    </div>
+                </div>
+                <div class="col-lg-6" id="fourth-column-outer-laptop">
+                    <div id="overlay4"> Innovations & Future <span class="overlay-subtitle"> Start with a shaker hover,
+                            <br> then check me </span> </div>
+                    <div class="row py-5 px-4">
+                        <div class="col-11 fourth-column-content-laptop ms-auto mb-4 pt-3 pb-2 px-4">
+                            <h4 class="fourth-column-content-title-laptop ">New Flavors & Ingredients</h4>
+                            <ul>
+                                <li class="second-page-listing">Creative flavor combinations such as taro-matcha fusion,
+                                    brown sugar cheese tea, and
+                                    seasonal fruit blends are gaining popularity.</li>
+                                <li class="second-page-listing">Health-focused variations like oat milk, soy milk,
+                                    sugar-free sweeteners, and
+                                    antioxidant-rich teas cater to wellness-minded consumers.</li>
+                            </ul>
+                        </div>
+                        <div class="col-11 fourth-column-content-laptop ms-auto mt-4 mb-4 pt-3 pb-2 px-4">
+                            <h4 class="fourth-column-content-title-laptop text-start">Technological Innovations</h4>
+                            <ul>
+                                <li class="second-page-listing text-start">Automated tea brewing machines ensure
+                                    consistent flavor
+                                    and quality for every cup.
+                                </li>
+                                <li class="second-page-listing text-start">Mobile ordering apps and AI-powered
+                                    personalization
+                                    recommend drinks based on
+                                    customer preferences, improving convenience and engagement.</li>
+                                <li class="second-page-listing text-start">Boba-making machines speed up production
+                                    while
+                                    maintaining chewy texture.</li>
+                            </ul>
+                        </div>
+                        <div class="col-11 fourth-column-content-laptop ms-auto mt-4 pt-3 pb-2 px-4">
+                            <h4 class="fourth-column-content-title-laptop">Sustainability & Environmental Concerns</h4>
+                            <ul>
+                                <li class="second-page-listing">Adoption of biodegradable or compostable cups and straws
+                                    to reduce single-use plastic waste.</li>
+                                <li class="second-page-listing">Encouraging customers to bring reusable cups with
+                                    incentives or discounts.</li>
+                                <li class="second-page-listing">Exploring eco-friendly packaging and supply chain
+                                    practices to reduce the industry's carbon footprint.</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 secondPage-title-laptop pacifico-regular text-end mt-4 pt-3">Innovations &
+                            Future
+                            Trends</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav id="navbar-example2" class="navbar d-lg-none px-4 mb-3 mt-2">
+            <a class="navbar-brand" href="information.html">Information</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Type</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading3">Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading4">Innovations</a>
+                </li>
+            </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0">
+            <div class="container-fluid d-lg-none px-5">
+                <div class="row gy-4">
+                    <div class="col-12">
+                        <div class="col-12 secondPage-title-laptop pacifico-regular mt-3 mb-4" id="scrollspyHeading1">
+                            History & Origin</div>
+                        <div class="col-12 first-column-content-laptop pb-3 pt-4 px-4">
+                            <h1 class="first-column-content-title-laptop">Where and How It Started:</h1>
+                            <p class="first-column-content-info-laptop">Bubble tea began in Taiwan (1980s), blending
+                                sweet milk tea with chewy tapioca pearls.
+                                One origin story credits Chun Shui Tang Tea House in Taichung.</p>
+                        </div>
+                        <div class="col-12 first-column-content-laptop pb-3 pt-4 px-4 mt-3">
+                            <h1 class="first-column-content-title-laptop text-end">Evolution and Global Spread:</h1>
+                            <p class="first-column-content-info-laptop text-end">From a Taiwanese street drink, it
+                                expanded across Asia, then to North America, Europe,
+                                and beyond, evolving with new flavors and styles.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 secondPage-title-laptop pacifico-regular text-end py-4 mb-2 mt-4"
+                                id="scrollspyHeading2">Type of Bubble Tea
+                            </div>
+                            <div class="col-12 second-column-content-laptop px-0 py-2 ms-auto"
+                                id="second-column-item1-laptop">
+                                <p class="m-0" id="second-column-nonbutton1-laptop">Flavored tea</p>
+
+                            </div>
+                            <div class="col-12 second-column-content-laptop px-0 py-2 ms-auto mt-4"
+                                id="second-column-item2-laptop">
+                                <p class="m-0" id="second-column-nonbutton2-laptop">Milk tea</p>
+
+                            </div>
+                            <div class="col-12 second-column-content-laptop px-0 py-2 ms-auto mt-4"
+                                id="second-column-item3-laptop">
+                                <p class="m-0" id="second-column-nonbutton3-laptop">Slushies</p>
+
+                            </div>
+                            <div class="col-12 second-column-content-laptop px-0 py-2 ms-auto mt-4"
+                                id="second-column-item4-laptop">
+                                <p class="m-0" id="second-column-nonbutton4-laptop">And MORE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 secondPage-title-laptop pacifico-regular mt-5 mb-4"
+                                id="scrollspyHeading3">Cultural Impact</div>
+                            <div class="third-column-content-container">
+                                <div class="col-5 third-column-content-laptop me-5 p-4">
+                                    <h4 class="third-column-content-title-laptop">Bubble Tea Shops as Community Hangouts
+                                    </h4>
+                                    <p class="third-column-content-info-laptop py-2">Bubble tea cafes are more than just
+                                        places
+                                        to get drinks — they have become social hubs
+                                        for friends, couples, and study groups. Many cafes have <span
+                                            class="highlight-word">Instagrammable interiors</span> with
+                                        cozy seating, neon signs, and trendy decor, encouraging people to spend time
+                                        there.
+                                        In
+                                        some cities, bubble tea shops are a must-stop spot after school or work, similar
+                                        to
+                                        how
+                                        coffee shops work in the West. Free Wi-Fi and charging spots often make them
+                                        study
+                                        or
+                                        work-friendly spaces for students and freelancers.</p>
+                                    <img src="/Asset/Pictures/Women hangout.webp" alt=""
+                                        class="third-column-picture-laptop">
+                                </div>
+                                <div class="col-5 third-column-content-laptop ms-5 p-4">
+                                    <img src="/Asset/Pictures/Celebrities.png" alt=""
+                                        class="third-column-picture-laptop">
+                                    <p class="third-column-content-info-laptop pt-3 pb-1">Bubble tea has become more
+                                        than a
+                                        drink — it's a
+                                        global trend shaping pop culture, social
+                                        media, and fashion. Featured in TV shows, movies, and K-pop culture, it's
+                                        boosted by
+                                        influencers and celebrities sharing their favorite boba drinks. The rise of
+                                        <span class="highlight-word"> Instagrammable drinks</span> — colorful layers,
+                                        creative
+                                        toppings, and cute cup designs — has
+                                        made it a social media favorite, with millions of posts under hashtags like
+                                        #BubbleTea
+                                        and #BobaLife. Bubble tea branding also inspires merchandise and pastel-themed
+                                        streetwear.
+                                    </p>
+                                    <h4 class="third-column-content-title-laptop">Bubble Tea in Pop Culture & Trends
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 secondPage-title-laptop pacifico-regular text-end mt-5 mb-4"
+                                id="scrollspyHeading4">Innovations
+                                & Future Trends</div>
+                            <div class="col-12 fourth-column-content-laptop ms-auto mb-3 pt-3 pb-2 px-4">
+                                <h4 class="fourth-column-content-title-laptop ">New Flavors & Ingredients</h4>
+                                <ul>
+                                    <li class="second-page-listing">Creative flavor combinations such as taro-matcha
+                                        fusion,
+                                        brown sugar cheese tea, and
+                                        seasonal fruit blends are gaining popularity.</li>
+                                    <li class="second-page-listing">Health-focused variations like oat milk, soy
+                                        milk,
+                                        sugar-free sweeteners, and
+                                        antioxidant-rich teas cater to wellness-minded consumers.</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 fourth-column-content-laptop ms-auto mt-3 mb-3 pt-3 pb-2 px-4">
+                                <h4 class="fourth-column-content-title-laptop text-start">Technological Innovations
+                                </h4>
+                                <ul>
+                                    <li class="second-page-listing text-start">Automated tea brewing machines ensure
+                                        consistent flavor
+                                        and quality for every cup.
+                                    </li>
+                                    <li class="second-page-listing text-start">Mobile ordering apps and AI-powered
+                                        personalization
+                                        recommend drinks based on
+                                        customer preferences, improving convenience and engagement.</li>
+                                    <li class="second-page-listing text-start">Boba-making machines speed up
+                                        production
+                                        while
+                                        maintaining chewy texture.</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 fourth-column-content-laptop ms-auto mt-3 pt-3 pb-2 px-4">
+                                <h4 class="fourth-column-content-title-laptop">Sustainability & Environmental
+                                    Concerns
+                                </h4>
+                                <ul>
+                                    <li class="second-page-listing">Adoption of biodegradable or compostable cups
+                                        and
+                                        straws
+                                        to reduce single-use plastic waste.</li>
+                                    <li class="second-page-listing">Encouraging customers to bring reusable cups
+                                        with
+                                        incentives or discounts.</li>
+                                    <li class="second-page-listing">Exploring eco-friendly packaging and supply
+                                        chain
+                                        practices to reduce the industry's carbon footprint.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pb-3 mb-4 mt-5 pt-3">
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-4 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="information.html" class="nav-link px-4 text-body-secondary">Information</a>
+            </li>
+            <li class="nav-item"><a href="form.html" class="nav-link px-4 text-body-secondary">Form</a></li>
+        </ul>
+        <p class="text-center text-body-secondary pt-2">© 2025 BobaCulture, Inc</p>
+    </footer>
+
+    <script src="Javascript/headerscript.js" defer></script>
+    <script src="Javascript/information.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!--Source attribution
+        https://www.tealeaves.com/pages/bubble-tea-origins?srsltid=AfmBOoqLKixOlznJ6vslFCb0rEOdy9dNwR7hxX5fhr99A0XEiOvhWizz
+        https://www.betterretailing.com/bubble-tea-trend-convenience-stores/
+        https://cooking.nytimes.com/recipes/1024647-bubble-tea
+        https://www.foodandwine.com/recipes/iced-matcha-latte
+        https://sethlui.com/wawa-chacha-bubble-tea-singapore/
+        https://www.thestar.com.my/lifestyle/living/2024/09/10/bubble-tea-craze-in-china-transformed-by-penny-pinching-youth
+        https://www.scmp.com/magazines/style/travel-food/article/3021664/7-bubble-tea-bars-malaysia-where-you-can-snap-perfect -->
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="backgroundOverlay"></div>
+            <div class="container px-3 py-sm-2 px-sm-4" id="navbar3">
+                <!--Use this element for laptop and desktop-->
+                <img src="Asset/Pictures/Bubble tea logo.png" class="img-fluid d-none d-lg-block"
+                    data-bs-toggle="tooltip" data-bs-title="Click me to open navigation menu." data-bs-placement="left"
+                    id="logoLaptop" alt="A milk tea that has pearls and straw">
+
+                <!--Use this element for phone and tablet-->
+                <img src="Asset/Pictures/Bubble tea logo.png" class="img-fluid d-lg-none" data-bs-toggle="tooltip"
+                    data-bs-title="Click me to open navigation menu." data-bs-placement="left" id="logoMobile"
+                    alt="A milk tea that has pearls and straw">
+                <p id="logoTitle" class=" pt-3 pe-3">The Boba Culture</p>
+            </div>
+
+            <div id="navigation">
+                <!--Use this element for laptop and desktop-->
+                <ul class="d-none d-lg-flex">
+                    <li class="nav-menu-laptop">
+                        <a class="anchorNavLaptop" href="index.html">
+                            <span class="pearls">⚫</span>
+                        </a>
+                        <span class="nav-item-laptop px-5 py-1">Home</span>
+                    </li>
+                    <li class="nav-menu-laptop">
+                        <a class="anchorNavLaptop" href="information.html">
+                            <span class="pearls">⚫</span>
+                        </a>
+                        <span class="nav-item-laptop px-5 py-1">Information</span>
+                    </li>
+                    <li class="nav-menu-laptop">
+                        <a class="anchorNavLaptop" href="form.html">
+                            <span class="pearls">⚫</span>
+                        </a>
+                        <span class="nav-item-laptop px-5 py-1">Form</span>
+                    </li>
+                </ul>
+
+                <!--Use this element for phone and tablet-->
+                <ul class="d-flex d-lg-none">
+                    <li class="nav-menu-mobile">
+                        <a class="anchorNavMobile" href="index.html">
+                            <span class="pearls">⚫</span>
+                            <span class="nav-item-mobile px-5 py-1">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu-mobile">
+                        <a class="anchorNavMobile" href="information.html">
+                            <span class="pearls">⚫</span>
+                            <span class="nav-item-mobile px-5 py-1">Information</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu-mobile">
+                        <a class="anchorNavMobile" href="form.html">
+                            <span class="pearls">⚫</span>
+                            <span class="nav-item-mobile px-5 py-1">Form</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid container-third-page px-4">
+            <h1 class="h1-form-page">Spill the Tea on Your Bubble Tea</h1>
+            <h5 class="h5-form-page mb-5">Tell us your favorites, stories, and bubble tea memories.</h5>
+            <form class="row g-4">
+                <div class="col-12">
+                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+                <div class="col-12">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    <p class="optional-form-page ps-2 pt-1">*Optional, for updates / newsletter signup</p>
+                </div>
+                <div class="col-6">
+                    <div class="col-12 mb-3">
+                        <label for="inputOption" class="form-label ps-1">Favorite bubble tea flavor/type</label>
+                        <select id="inputOption" class="form-select">
+                            <option selected disabled>Choose an option</option>
+                            <option>Flavoured tea</option>
+                            <option>Milk tea</option>
+                            <option>Slushies</option>
+                            <option>Macha</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label ps-1">How often do you drink bubble tea?</label>
+                    </div>
+                    <div class="col-12 ps-1">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="frequency" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">Daily</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="frequency" id="radioDefault2">
+                            <label class="form-check-label" for="radioDefault2">Weekly</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="frequency" id="radioDefault3">
+                            <label class="form-check-label" for="radioDefault3">Occasionally</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="frequency" id="radioDefault4">
+                            <label class="form-check-label" for="radioDefault4">Never</label>
+                        </div>
+                    </div>
+                    <div class="col-12 ps-1 mt-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox">
+                            <label class="form-check-label" for="checkbox">
+                                Would you recommend bubble tea to a friend?
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 textarea-container">
+                    <label for="message">Share your favorite bubble tea memory or story</label>
+                    <textarea class="form-control mt-2" id="message" name="message" rows="5"
+                        placeholder="Message"></textarea>
+                    <div class="word-count" id="wordCount">0 words</div>
+                </div>
+                <div class="col-12">
+                    <label for="customRange1" class="form-label">Rate your bubble tea love from 1 to 10</label>
+                    <input type="range" class="form-range" id="customRange1">
+                </div>
+
+                <div class="col-12 mb-5">
+                    <button class="btn btn-primary w-100 submit-form" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" type="button">Submit</button>
+                </div>
+            </form>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">All Set!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Thanks a bunch for sharing your bubble tea story! Stay refreshed and keep sipping.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pb-3 mb-4 mt-5">
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-4 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="information.html" class="nav-link px-4 text-body-secondary">Information</a>
+            </li>
+            <li class="nav-item"><a href="form.html" class="nav-link px-4 text-body-secondary">Form</a></li>
+        </ul>
+        <p class="text-center text-body-secondary pt-2">© 2025 BobaCulture, Inc</p>
+    </footer>
+
+    <script src="Javascript/headerscript.js" defer></script>
+    <script src="Javascript/form.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

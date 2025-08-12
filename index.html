@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="backgroundOverlay"></div>
+            <div class="container px-3 py-sm-2 px-sm-4" id="navbar1">
+                <!--Use this element for laptop and desktop-->
+                <img src="Asset/Pictures/Bubble tea logo.png" class="img-fluid d-none d-lg-block"
+                    data-bs-toggle="tooltip" data-bs-title="Click me to open navigation menu." data-bs-placement="left"
+                    id="logoLaptop" alt="A milk tea that has pearls and straw">
+
+                <!--Use this element for phone and tablet-->
+                <img src="Asset/Pictures/Bubble tea logo.png" class="img-fluid d-lg-none" data-bs-toggle="tooltip"
+                    data-bs-title="Click me to open navigation menu." data-bs-placement="left" id="logoMobile"
+                    alt="A milk tea that has pearls and straw">
+                <p id="logoTitle" class=" pt-3 pe-3">The Boba Culture</p>
+            </div>
+
+            <div id="navigation">
+                <!--Use this element for laptop and desktop-->
+                <ul class="d-none d-lg-flex">
+                    <li class="nav-menu-laptop">
+                        <a class="anchorNavLaptop" href="index.html">
+                            <span class="pearls">⚫</span>
+                        </a>
+                        <span class="nav-item-laptop px-5 py-1">Home</span>
+                    </li>
+                    <li class="nav-menu-laptop">
+                        <a class="anchorNavLaptop" href="information.html">
+                            <span class="pearls">⚫</span>
+                        </a>
+                        <span class="nav-item-laptop px-5 py-1">Information</span>
+                    </li>
+                    <li class="nav-menu-laptop">
+                        <a class="anchorNavLaptop" href="form.html">
+                            <span class="pearls">⚫</span>
+                        </a>
+                        <span class="nav-item-laptop px-5 py-1">Form</span>
+                    </li>
+                </ul>
+
+                <!--Use this element for phone and tablet-->
+                <ul class="d-flex d-lg-none">
+                    <li class="nav-menu-mobile">
+                        <a class="anchorNavMobile" href="index.html">
+                            <span class="pearls">⚫</span>
+                            <span class="nav-item-mobile px-5 py-1">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu-mobile">
+                        <a class="anchorNavMobile" href="information.html">
+                            <span class="pearls">⚫</span>
+                            <span class="nav-item-mobile px-5 py-1">Information</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu-mobile">
+                        <a class="anchorNavMobile" href="form.html">
+                            <span class="pearls">⚫</span>
+                            <span class="nav-item-mobile px-5 py-1">Form</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="first-home-section d-none d-sm-block">
+            <video muted autoplay loop id="videoBubbletea-tablet-laptop">
+                <source
+                    src="Asset/Videos/female-hand-stirs-bubbles-in-glass-of-bubble-tea-taiwanese-milk-boba-tea-with--SBV-347588824.mp4"
+                    type="video/mp4" alt="">
+            </video>
+            <div class="text-container-home1">
+                <h1 id="first-home-h1-tablet-laptop">Welcome to the <br> World of Bubble <br> Tea Culture</h1>
+                <h6 id="first-home-h6-tablet-laptop">A Journey Through Taste, Texture, and Culture.</h6>
+                <div class="first-home-button-tablet-laptop mt-3">
+                    <a href="#second-home-section-laptop" class="btn first-home-buttons-tablet-laptop px-3 btn-brown"
+                        role="button">Intro</a>
+                    <a href="#carouselExampleCaptions" class="btn first-home-buttons-tablet-laptop px-3 btn-dark"
+                        role="button">Culture</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="first-home-section d-sm-none">
+            <div class="video-container-mobile">
+                <video muted autoplay loop id="videoBubbletea-mobile">
+                    <source
+                        src="Asset/Videos/female-hand-stirs-bubbles-in-glass-of-bubble-tea-taiwanese-milk-boba-tea-with--SBV-347588824.mp4"
+                        type="video/mp4" alt="">
+                </video>
+            </div>
+            <div class="text-container-home2">
+                <h1 id="first-home-h1-mobile">Welcome to <br> the World of <br> Bubble Tea <br> Culture</h1>
+                <h6 id="first-home-h6-mobile">A Journey Through Taste, Texture, and <br> Culture.</h6>
+                <div class="first-home-button-mobile mt-1">
+                    <a href="#second-home-section-mobile" class="btn first-home-buttons-mobile btn-brown"
+                        role="button">Intro</a>
+                    <a href="#carouselExampleCaptions" class="btn first-home-buttons-mobile btn-dark"
+                        role="button">Culture</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="second-home-section-laptop" class="d-none d-sm-flex">
+            <div class="second-box-1-laptop p-5">
+                <h2 class="second-box-text-heading">Our objective</h2>
+                <p class="second-box1-text-content" class="py-2">To celebrate the vibrant bubble tea culture, share its
+                    history, and
+                    engage bubble tea lovers.</p>
+            </div>
+            <div class="second-box-2-laptop p-5">
+                <h2 class="second-box-text-heading">Our message</h2>
+                <p class="second-box2-text-content">Why bubble tea is more than just a drink — a cultural phenomenon, a
+                    social experience, and a creative art form.</p>
+            </div>
+        </div>
+
+        <div id="second-home-section-mobile" class="d-sm-none d-flex">
+            <div class="second-box-1-mobile p-5">
+                <h2 class="second-box-text-heading">Our objective</h2>
+                <p class="second-box1-text-content" class="py-2">To celebrate the vibrant bubble tea culture, share its
+                    history, and
+                    engage bubble tea lovers.</p>
+            </div>
+            <div class="second-box-2-mobile p-5">
+                <h2 class="second-box-text-heading">Our message</h2>
+                <p class="second-box2-text-content">Why bubble tea is more than just a drink — a cultural phenomenon, a
+                    social experience, and a creative art form.</p>
+            </div>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-touch="true" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Asset/Pictures/Friends hangout.jpeg" class="d-block w-100"
+                        alt="A cheerful group of young people sitting at a café table, each holding bubble tea cups, laughing and chatting.">
+                    <div class="carousel-caption d-block d-md-block">
+                        <h5>Friends Hanging Out</h5>
+                        <p>Boba time is bonding time — share it with friends.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Asset/Pictures/Interior design.png" class="d-block w-100"
+                        alt="Warmly lit bubble tea shop with comfortable chairs, plants, and customers enjoying drinks.">
+                    <div class="carousel-caption d-block d-md-block">
+                        <h5>Cozy Café Interior</h5>
+                        <p>The warm, welcoming atmosphere of your local boba shop.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Asset/Pictures/DIY.jpg" class="d-block w-100"
+                        alt="A kitchen counter with bubble tea ingredients — tapioca pearls, milk tea, shaker, and glass cups.">
+                    <div class="carousel-caption d-block d-md-block">
+                        <h5>DIY Bubble Tea at Home</h5>
+                        <p>Get creative and mix your own perfect drink.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Asset/Pictures/Festival.jpg" class="d-block w-100"
+                        alt="Outdoor festival or market stall selling bubble tea, with colorful decorations and happy crowds.">
+                    <div class="carousel-caption d-block d-md-block">
+                        <h5>Boba Festival</h5>
+                        <p>Community events and festivals that celebrate bubble tea culture.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <footer class="pb-3 mb-4 mt-5">
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-4 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="information.html" class="nav-link px-4 text-body-secondary">Information</a>
+            </li>
+            <li class="nav-item"><a href="form.html" class="nav-link px-4 text-body-secondary">Form</a></li>
+        </ul>
+        <p class="text-center text-body-secondary pt-2">© 2025 BobaCulture, Inc</p>
+    </footer>
+
+    <script src="Javascript/headerscript.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+
+    <!--Source attribution: 
+        https://antdisplay.com/Ideas/modern-concise-style-bubble-tea-store-interior-design-idea/
+        https://eatlittlebird.com/how-to-make-bubble-tea-boba-tea/
+        https://www.thestar.com.my/metro/metro-news/2019/10/21/boba-lovers-in-a-bubbly-mood -->
+
+</body>
+
+</html>

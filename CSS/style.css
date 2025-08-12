@@ -1,0 +1,779 @@
+/* Global style 
+------------------------------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #f0ead2;
+}
+
+/* Header for home page
+-----------------------------------------------------------------------------*/
+#logoLaptop {
+    height: 70px; /* Fixed size */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#logoLaptop:hover {
+    transform: translateY(-10px);
+}
+
+#logoMobile {
+    height: 70px; /* Fixed size */
+}
+
+#logoTitle {
+    font-size: 30px; /* Fixed size */
+    color: white;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+@media (max-width: 575.98px) {
+  #logoTitle {
+    font-size: 20px; /* smaller font size on phones */
+  }
+  
+  #logoMobile {
+    height: 45px;
+  }
+}
+
+#logoTitleMobile {
+    font-size: 10px; /* Fixed size */
+    color: white;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+#backgroundOverlay {
+    background: linear-gradient(180deg, #f3e5d1 0%, #d8b384 40%, #8b5a2b 100%); /* Create a classic latte-layered colour */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4; /* To make sure the background covers all the contents except navigation menu" */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: none;
+}
+
+#navbar1 {
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.4rem;
+    align-items: center;
+    background-color: #be986e;
+    z-index: 2;
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Keep content centered */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5; /* To ensure the menu is above the body background*/
+    transform: translateY(-100%);
+    transition: transform 0.8s ease;
+}
+
+#navigation ul {
+    flex-direction: column;
+    gap: 40px;
+}
+
+#navigation ul li { /* Work for laptop only since there are two different tags under li; no work for mobile as there is only one tag under li*/
+    display: flex;
+    align-items: center;
+}
+
+.pearls {
+    font-size: 72px; /* Fixed */
+}
+
+.anchorNavLaptop {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.anchorNavLaptop:hover {
+    transform: scale(1.2);
+}
+
+.nav-item-laptop {
+    font-size: 18px; /* Fixed size */
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.4s ease; /* Use "all" to target all the properties (opacity and transform in line 83) to transition smoothly, not just one of them*/
+}
+
+.nav-menu-laptop:hover .nav-item-laptop {
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+.anchorNavMobile {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item-mobile {
+    font-size: 18px; /* Fixed */
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    transform: translateX(10px);
+}
+
+/* Header for second page
+-----------------------------------------------------------------------------*/
+#navbar2 {
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.4rem;
+    align-items: center;
+    background-color: #be986e;
+    z-index: 2;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.nav-link, .text-center{
+    font-size: 18px;
+}
+
+.nav {
+    border-bottom: 1px solid #be986e;
+}
+
+/* Main for home page
+-----------------------------------------------------------------------------*/
+.first-home-section {
+    position: relative;
+    min-height: 110vh; /* Allow scroll for content below */
+    overflow: hidden;
+    z-index: 1;
+}
+
+#videoBubbletea-tablet-laptop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is key to making the video fill the space */
+}
+
+.text-container-home1 {
+    position: absolute;
+    top: 22%;
+    right: 4%;
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    color: white;
+}
+
+#first-home-h1-tablet-laptop {
+    font-size: 80px;
+    font-weight: 600;
+    text-align: right;
+    line-height: 1.4;
+}
+
+#first-home-h6-tablet-laptop {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.first-home-button-tablet-laptop {
+    display: flex;
+    gap: 1.5em;
+}
+
+.first-home-buttons-tablet-laptop {
+    font-size: 35px; /* Fixed */
+    border-radius: 20px;
+    color: white;
+}
+
+.btn-brown {
+    background-color: #443627;
+    border-color: #443627;
+}
+
+.btn-brown:hover {
+    background-color: #362f23;
+    border-color: #362f23;
+    color: white;
+}
+
+.video-container-mobile {
+    width: 100%;
+    /* padding-top: 150%; /* This is the key. 150% for a 2:3 aspect ratio. Adjust this value to control the video's height. */
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#videoBubbletea-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This makes the vertical video fill the container */
+}
+
+.text-container-home2 {
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    color: white;
+}
+
+#first-home-h1-mobile {
+    text-align: right;
+    font-size: 50px; /* Fixed */
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+#first-home-h6-mobile {
+    text-align: center;
+    font-size: 16px; /* Fixed */
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.first-home-button-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.first-home-buttons-mobile {
+    font-size: 20px; /* Fixed */
+    border-radius: 15px;
+    color: white;
+}
+
+#second-home-section-laptop {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: -20px;
+    z-index: 2;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.second-box-1-laptop, .second-box-2-laptop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 30%;
+    gap: 0.5em;
+}
+
+.second-box-text-heading {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.second-box1-text-content {
+    font-size: 25px;
+}
+
+.second-box2-text-content {
+    font-size: 23px;
+}
+
+#second-home-section-mobile {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: -100px;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em
+}
+
+.second-box-1-mobile, .second-box-2-mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 70%;
+    gap: 0.5em
+}
+
+.carousel{
+    position: relative;
+    left: 0;
+    z-index: 3;
+    margin-top: -70px;
+}
+
+.carousel-item img {
+  filter: brightness(70%); /* 100% = normal, 70% = darker */
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        font-size: 0.7rem;
+    }
+
+    .carousel {
+        position: relative;
+        left: 0;
+        margin-top: -120px;
+    }
+
+    #carouselExampleCaptions,
+    .carousel-item,
+    .carousel-item img {
+        height: 100vh;
+        object-fit: cover;
+  }
+}
+
+/* Main for second page
+-----------------------------------------------------------------------------*/
+.first-row-laptop {
+    border-top: 2px solid white;
+    border-bottom: 1px solid white;
+}
+
+.second-row-laptop {
+    border-top: 1px solid white;
+    border-bottom: 2px solid white;
+}
+
+.first-column-laptop, .second-column-laptop{
+    margin-bottom: 100px;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.secondPage-title-laptop {
+    color: #b56576;
+    font-size: 40px;
+}
+
+.first-column-content-title-laptop {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.first-column-content-info-laptop {
+    font-size: 18px;
+}
+
+#first-column-outer-laptop {
+    position: relative; /* Make this container a positioning reference */
+    border-right: 1px solid white;
+}
+
+#first-column-outer-laptop::before {
+  content: ""; /* Creates an empty pseudo-element (we dont want any words here), if didnt create the css will ignore this selector */
+  position: absolute; /* Position it absolutely inside the .first-column-outer-laptop */
+  inset: 0; /* Stretch to cover entire container */
+  background: url(/Asset/Pictures/Map.webp) center/cover;
+  opacity: 0.6;
+  z-index: 0; /* Put it behind the content */
+  background-color: transparent;
+}
+
+#first-column-outer-laptop > * { /* This code means select every direct child element inside .first-column-outer-laptop */
+    position: relative; /* In order to use z-index it is a must to declare a positon element */
+    z-index: 1;
+}
+
+.first-column-content-laptop {
+    position: relative;
+}
+
+.first-column-content-laptop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 3px solid #d9a7c7;
+    background-color: #fffaf3;
+    border-radius: 30px;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.first-column-content-laptop > * {
+    position: relative;
+    z-index: 1;
+}
+
+.second-column-content-laptop {
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#second-column-item1-laptop {
+    border: 3px solid #da6220;
+    position: relative;
+}
+
+#second-column-item1-laptop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(/Asset/Pictures/Flavour\ tea.png) center/cover;
+    border-radius: 30px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+#second-column-item1-laptop > * {
+    position: relative;
+    z-index: 1;
+}
+
+#second-column-item1-laptop:hover::before {
+    opacity: 0.5;
+}
+
+#second-column-nonbutton1-laptop{
+    color: #da6220;
+}
+
+#second-column-item2-laptop {
+    border: 3px solid #3d1700;
+    position: relative;
+}
+
+#second-column-item2-laptop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(/Asset/Pictures/Milk\ tea.jpg) center/cover;
+    border-radius: 30px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+#second-column-item2-laptop > * {
+    position: relative;
+    z-index: 1;
+}
+
+#second-column-item2-laptop:hover::before {
+    opacity: 0.5;
+}
+
+
+#second-column-nonbutton2-laptop {
+    color: #3d1700;
+}
+
+#second-column-item3-laptop {
+    border: 3px solid #0c7016;
+    position: relative;
+}
+
+#second-column-item3-laptop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(/Asset/Pictures/Slushies.jpg) center/cover;
+    border-radius: 30px;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#second-column-item3-laptop > * {
+    position: relative;
+    z-index: 1;
+}
+
+#second-column-item3-laptop:hover::before {
+    opacity: 0.6;
+}
+
+#second-column-nonbutton3-laptop {
+    color: #0c7016;
+}
+
+#second-column-item4-laptop {
+    border: 3px solid #ff26b9;
+    position: relative;
+}
+
+#second-column-item4-laptop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(/Asset/Pictures/Others.png) center/cover;
+    border-radius: 30px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+#second-column-item4-laptop > * {
+    position: relative;
+    z-index: 1;
+}
+
+#second-column-nonbutton4-laptop {
+    color: #ff26b9;
+}
+
+#second-column-outer-laptop {
+    border-left: 1px solid white;
+    position: relative;
+}
+
+.third-column-content-laptop {
+    border: 3px solid #d9a7c7;
+    background-color: #fffaf3;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.third-column-content-title-laptop {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.third-column-content-info-laptop {
+    font-size: 13px;
+}
+
+.highlight-word {
+    font-weight: bold;
+}
+
+.third-column-picture-laptop {
+    width: 100%;
+    object-fit: cover;
+}
+
+#third-column-outer-laptop {
+    border-right: 1px solid white;
+    position: relative;
+}
+
+
+.fourth-column-content-laptop {
+    border: 3px solid #d9a7c7;
+    background-color: #fffaf3;
+    border-radius: 30px;
+    text-align: end;
+}
+
+.fourth-column-content-title-laptop {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.second-page-listing {
+    list-style: disc;
+    font-size: 13px;
+}
+
+#fourth-column-outer-laptop {
+    border-left: 1px solid white;
+    position: relative;
+}
+
+#shakernavigation {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: #be986d ;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+@media (max-width: 1449px) {
+    #shakernavigation {
+        top: 42%;
+        height: 8%;
+    }
+}
+
+@media (max-width: 1260px) {
+    #shakernavigation {
+        top: 41%;
+        height: 7%;
+    }
+}
+
+@media (max-width: 1139px) {
+    #shakernavigation {
+        top: 39%;
+        height: 6%;
+    }
+}
+
+@media (max-width: 1035px) {
+    #shakernavigation {
+        top: 38%;
+    }
+}
+
+#shakernavigation:hover {
+    background-color: #f0ead2;
+}
+
+#overlay1, #overlay2, #overlay3, #overlay4{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    inset: 0;
+    background-color:#b56576;
+    z-index: 2; /* make sure it's above the content*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color:  white;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+.overlay-subtitle {
+    font-size: 20px;
+    color: #D3D3D3;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: #b56576;
+    font-weight: 500;
+}
+
+.navbar-brand:hover {
+    color: #b56576;
+    font-weight: 500;
+}
+
+.nav-pills .nav-link {
+  border-radius: 20px;
+  color: #333; /* default text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #be986d; /* active background */
+  color: white; /* active text color */
+  font-weight: bold;
+}
+
+.third-column-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header for third page
+-----------------------------------------------------------------------------*/
+#navbar3 {
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.4rem;
+    align-items: center;
+    background-color: #be986e;
+    z-index: 2;
+}
+
+/* Main for third page
+-----------------------------------------------------------------------------*/
+.container-third-page {
+    margin-top: 130px; /* bootstrap does not support margin thats larger than 5 */
+}
+
+textarea {
+  resize: none; /* disables the resize handle */
+  height: 250px;
+}
+
+.textarea-container {
+    position: relative;
+}
+
+.word-count {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-size: 18px;
+    color: gray;
+}
+
+.submit-form {
+    font-size: 25px;
+}
+
+.h1-form-page {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.h5-form-page {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.optional-form-page {
+    font-size: 13px;
+}
