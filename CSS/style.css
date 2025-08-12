@@ -422,7 +422,7 @@ body {
   content: ""; /* Creates an empty pseudo-element (we dont want any words here), if didnt create the css will ignore this selector */
   position: absolute; /* Position it absolutely inside the .first-column-outer-laptop */
   inset: 0; /* Stretch to cover entire container */
-  background: url(Asset/Pictures/Map.webp) center/cover;
+  background: url("../Asset/Pictures/Map.webp") center/cover;
   opacity: 0.6;
   z-index: 0; /* Put it behind the content */
   background-color: transparent;
@@ -469,7 +469,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(Asset/Pictures/Flavour\ tea.png) center/cover;
+    background: url("../Asset/Pictures/Flavour tea.png") center/cover;
     border-radius: 30px;
     opacity: 0.3;
     z-index: 0;
@@ -497,7 +497,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(Asset/Pictures/Milk\ tea.jpg) center/cover;
+    background: url("../Asset/Pictures/Milk tea.jpg") center/cover;
     border-radius: 30px;
     opacity: 0.3;
     z-index: 0;
@@ -526,7 +526,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(Asset/Pictures/Slushies.jpg) center/cover;
+    background: url("../Asset/Pictures/Slushies.jpg") center/cover;
     border-radius: 30px;
     opacity: 0.4;
     z-index: 0;
@@ -554,7 +554,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(Asset/Pictures/Others.png) center/cover;
+    background: url("../Asset/Pictures/Others.png") center/cover;
     border-radius: 30px;
     opacity: 0.3;
     z-index: 0;
